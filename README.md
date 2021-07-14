@@ -1,2 +1,2 @@
 # color-game
-# coll
+GithubPages: https://ahaanverma05.github.io/color-game/
