@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>Choose The Color Game</title>
+    <style>
+        #top-row {
+            width: 100%;
+            height: 20vh;
+            background: #4682B4;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #232323;
+        }
+        #bottom-top-row {
+            width: 100%;
+            background: white;
+            height: 30px;
+        }
+        #reset {
+            border: none;
+            background: white;
+            color: #4682B4;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #reset:hover {
+            transition: .3s ease;
+            background: #4682B4;
+            color: white;
+        }
+        .square {
+            width: 30%;
+            background: purple;
+            padding-bottom: 30%;
+            float: left;
+            margin: 1.66%;
+            border-radius: 15%;
+            transition: background 0.6s;
+            -webkit-transition: background 0.6s;
+            -moz-transition: background 0.6s;
+        }
+        #container {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        #message {
+            font-size: 20px;
+            position: relative;
+            left: 20px;
+        }
+        #timer {
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            font-size: 40px;
+            color: white;
+        }
+        #uiahdewsi {
+            height: 95vh;
+            position: absolute;
+            top: 2.5vh;
+            opacity: 0;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-row">
+    <h1 style="text-align: center; font-size: 30px; position: relative; top: 10px; color: white;">Choose The Color Game
+        <br>
+        <span style="font-size: 25px; text-align: center; color: white;" id="colorDisplay">RGB</span>
+    </h1>
+    </div>
+    <div id="bottom-top-row">
+        <button id="reset" onclick="location.reload()">NEW COLORS</button>
+        <!--Inside the ID Message Should be written "Try Again!" If Player gets a wrong.-->
+        <span id="message"></span>
+        <label><p id="timer">0</p></label>
+    </div>
+    <div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqp5219Jpz8IY-VXNY560a59SWBZf8P1Mu9Q&usqp=CAU" id="uiahdewsi">
+</body>
+<script src="script.js"></script>
+</html>
